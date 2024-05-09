@@ -10,7 +10,7 @@ export const ShoppingCartProvider = ({children}) => {
             count,
             sentCount
         }}>
-            [children]
+            {children}
         </ShoppingCartContext.Provider>
     )
 }

@@ -101,7 +101,7 @@ const Navbar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    carrito
+                    carrito {context.count}
                 </li>
 
 
