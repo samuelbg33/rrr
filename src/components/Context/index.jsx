@@ -3,7 +3,6 @@ export const ShoppingCartContext = createContext()
 
 export const ShoppingCartProvider = ({children}) => {
     const [count, sentCount] = useState(0)
-    console.log('COUNT',count)
      
     return (
         <ShoppingCartContext.Provider value={{
