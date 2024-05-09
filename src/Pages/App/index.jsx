@@ -8,6 +8,7 @@ import Signln from '../Signln'
 import Navbar   from '../../components/Navbar'
 import './App.css'
 import { ShoppingCartProvider } from '../../components/Context'
+
 export const AppRoutes = () => {
   let routes = useRoutes([
     { path: '/', element: <Home /> },
