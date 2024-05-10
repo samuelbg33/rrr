@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { PlusIcon,CheckIcon } from "@heroicons/react/16/solid"
+import { PlusIcon, CheckIcon } from "@heroicons/react/16/solid"
 import { ShoppingCartContext } from "../Context"
 
 const Card = (data) => {
@@ -18,10 +18,9 @@ const Card = (data) => {
      context.setCartProducts([...context.cartProducts, productData])
      context.closeProductDetail (context.cartProducts)
      context.openCheckoutSideMenu()
-     console.log('CARt:',context.cartProducts)
     }   
-    const renderIcon =()=>{
-        const isInCart = context.cartProducts.filter(product => product.id === id).legnth > 0
+    const renderIcon =(id)=>{
+        const isInCart = context.cartProducts.filter(product => product.id === id).length > 0
 
 
         if(isInCart){
@@ -37,7 +36,7 @@ const Card = (data) => {
             return(
                 <div
                    className = 'absolute top-0 right-0 flex justify-center items-center bg-white w-6 h-6 rounded-full m-2 p-1'
-                   monClick={(event) => addProductsToCart(event, data.data) }>
+                   onClick={(event) => addProductsToCart(event, data.data) }>
                    <PlusIcon className='h-6 w-6 text-black'></PlusIcon>
                 </div>
             )

@@ -17,8 +17,12 @@ export const ShoppingCartProvider = ({children}) => {
 
     // product Detail show pproduct
     const [productToShow,setProductToShow] = useState({})
-    //shopping cart
+    // carshoppingt
     const [cartProducts,setCartProducts] = useState([])
+
+    // carshoppingt
+    const [order,setOrder] = useState([])
+
 
 
 
@@ -36,7 +40,9 @@ export const ShoppingCartProvider = ({children}) => {
             setCartProducts,
             isCheckoutSideMenuOpen,
             openCheckoutSideMenu,
-            closeCheckoutSideMenu
+            closeCheckoutSideMenu,
+            order,
+            setOrder
 
 
         }}>
